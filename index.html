@@ -78,16 +78,81 @@
     <header id="skills">
       <div class="skill-box">
         <h1>Skills</h1>
-        <ul class="skill-list">
-          <!-- make seperate tab for skill organization and add more skills -->
-          <li>C/C++</li>
-          <li>C#</li>
-          <li>Computer Vision</li>
-          <li>WebGL</li>
-          <!--SQL, Java, Javascript, JQuery, React, Python-->
-          <li>Databases</li>
-          <li>Artificial Intelligence</li>
-        </ul>
+        <div id="skill__container">
+          <ul class="skill-list" id="lang">
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="red"
+                  style="width: 25%; margin-bottom: 4px"
+                ></div>
+              </div>
+              C/C++
+            </li>
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="green"
+                  style="width: 25%; margin-bottom: 4px"
+                ></div>
+              </div>
+              C#
+            </li>
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="blue"
+                  style="width: 25%; margin-bottom: 4px"
+                ></div>
+              </div>
+              Python
+            </li>
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="yellow"
+                  style="width: 25%; margin-bottom: 4px"
+                ></div>
+              </div>
+              Javascript/React
+            </li>
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="orange"
+                  style="width: 25%; margin-bottom: 4px"
+                ></div>
+              </div>
+              JQuery
+            </li>
+            <li>
+              <div class="bar-container round-medium">
+                <div
+                  class="skill-bar round-medium"
+                  id="purple"
+                  style="width: 10%; margin-bottom: 4px"
+                >4 Years</div>
+              </div>
+              WebGL
+            </li>
+          </ul>
+          <ul class="skill-list" id="tech" hidden>
+            <li>Database Design</li>
+            <li>Networking</li>
+            <li>Artificial Intelligence</li>
+            <li>Computer Vision</li>
+            <li>Computer Graphics</li>
+          </ul>
+        </div>
+        <div class="switch__container">
+          <a onclick="skillSwitch()" id="lang-switch">Languages</a>
+          <a onclick="skillSwitch()" id="tech-switch">Technical</a>
+        </div>
       </div>
     </header>
 

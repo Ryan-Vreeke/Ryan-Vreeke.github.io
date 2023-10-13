@@ -49,7 +49,7 @@ body {
 
 nav {
   position: fixed;
-  top:0;
+  top: 0;
   background-color: var(--nord2);
   height: 4em;
   width: 100%;
@@ -172,15 +172,81 @@ p {
 }
 
 /*medium screen*/
-@media screen and (max-width: 1200px){
-  .about__container{
+@media screen and (max-width: 1200px) {
+  .about__container {
     flex-direction: column;
   }
 }
 
 /*small screen*/
-@media screen and (max-width: 800px){
-  #picture{
+@media screen and (max-width: 800px) {
+  #picture {
     width: 80vw;
   }
+}
+
+/* Skills */
+#skills {
+}
+
+#skill__container {
+  background-color: var(--nord4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 500px;
+  width: 95%;
+}
+
+.skill-list {
+}
+
+#red {
+  background-color: var(--high1);
+}
+
+#green {
+  background-color: var(--high4);
+}
+
+#blue {
+  background-color: var(--nord10);
+}
+
+#yellow {
+  background-color: var(--high3);
+}
+
+#orange {
+  background-color: var(--high2);
+}
+
+#purple {
+  background-color: var(--high5);
+}
+
+.bar-container {
+  border: solid 3px var(--nord9);
+  background-color: var(--nord3);
+}
+
+.round-small {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.round-medium {
+  height: 20px;
+  border-radius: 20px;
+}
+
+.skill-bar {
+  color: var(--nord1);
+  overflow: hidden;
+  text-align: center;
+  font-weight: 500;
+}
+
+.skill-list li {
+  width: 300px;
 }
