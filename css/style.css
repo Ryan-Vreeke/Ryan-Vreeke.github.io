@@ -187,18 +187,22 @@ p {
 
 /* Skills */
 #skills {
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  background-color: var(--nord4);
+  width: 95%;
+}
+
+.skill-box{
+  text-align: center;
 }
 
 #skill__container {
-  background-color: var(--nord4);
   justify-content: center;
   align-items: center;
   display: flex;
   height: 500px;
-  width: 95%;
-}
-
-.skill-list {
 }
 
 #red {
@@ -245,8 +249,65 @@ p {
   overflow: hidden;
   text-align: center;
   font-weight: 500;
+  font-size: 16px;
+}
+
+.skill-list {
+  margin-top: 1rem;
+  -webkit-column-count: 2; /* Chrome/Opera, Safari */
+  -moz-column-count: 2; /* Mozilla Firefox */
+  column-count: 2;
+
+  /* Properties below are optional: */
+  -webkit-column-gap: 50px; /* Chrome/Opera, Safari */
+  -moz-column-gap: 50px; /* Mozilla Firefox */
+  column-gap: 50px;
+
+  -webkit-column-rule: 1px single grey; /* Chrome/Opera, Safari */
+  -moz-column-rule: 1px single grey; /* Mozilla Firefox */
+  column-rule: 1px single grey;
 }
 
 .skill-list li {
   width: 300px;
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 3rem;
+}
+
+.switch__container{
+  display: flex;
+  justify-content: center;
+}
+
+.switch__container a{
+  margin: 1rem;
+  margin-top: 0;
+  width: 160px;
+  height: 60px;
+  background-color: var(--nord3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px var(--nord7);
+  border-radius: 80px;
+}
+
+#lang-switch:hover{
+  cursor: pointer; 
+  border-color: var(--nord1);
+  background-color: var(--high5);
+}
+
+#tech-switch:hover{
+  cursor: pointer;
+  border-color: var(--nord1);
+  background-color: var(--nord10);
+  box-shadow: 5px 5px 5px var(--nord3);
+}
+
+.btn-text{
+  color:var(--nord6);
+  font-weight: 700;
+  font-size: 24px;
 }
