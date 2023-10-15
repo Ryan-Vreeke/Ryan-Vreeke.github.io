@@ -297,6 +297,7 @@ p {
   cursor: pointer; 
   border-color: var(--nord1);
   background-color: var(--high5);
+  box-shadow: 5px 5px 5px var(--nord3);
 }
 
 #tech-switch:hover{
