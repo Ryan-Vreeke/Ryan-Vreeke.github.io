@@ -51,6 +51,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: var(--nord2);
+  opacity: 0.95;
   height: 4em;
   width: 100%;
   display: flex;
@@ -77,6 +78,7 @@ nav {
 #edu-link:hover {
   color: var(--nord7);
 }
+
 
 #about-link:hover {
   color: var(--nord8);
@@ -120,6 +122,7 @@ p {
   margin: auto;
   margin-top: 2rem;
   border-radius: 8px;
+  padding: 1rem;
   width: 95%;
 }
 
@@ -192,6 +195,7 @@ p {
   border-radius: 8px;
   background-color: var(--nord4);
   width: 95%;
+  padding: 1rem;
 }
 
 .skill-box{
@@ -202,7 +206,7 @@ p {
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 500px;
+  padding: 1rem;
 }
 
 #red {
@@ -253,7 +257,6 @@ p {
 }
 
 .skill-list {
-  margin-top: 1rem;
   -webkit-column-count: 2; /* Chrome/Opera, Safari */
   -moz-column-count: 2; /* Mozilla Firefox */
   column-count: 2;
@@ -272,7 +275,7 @@ p {
   width: 300px;
   font-weight: 700;
   font-size: 25px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .switch__container{
@@ -297,14 +300,12 @@ p {
   cursor: pointer; 
   border-color: var(--nord1);
   background-color: var(--high5);
-  box-shadow: 5px 5px 5px var(--nord3);
 }
 
 #tech-switch:hover{
   cursor: pointer;
   border-color: var(--nord1);
   background-color: var(--nord10);
-  box-shadow: 5px 5px 5px var(--nord3);
 }
 
 .btn-text{
@@ -312,3 +313,155 @@ p {
   font-weight: 700;
   font-size: 24px;
 }
+
+/* Recent Projects */
+
+.projects {
+    background-color: #2e3440;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.projects h1 {
+    color: #81a1c1;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+.project__scrollmenu {
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    white-space: nowrap;
+    align-items: center;
+    display: flex;
+    border-color: #434c5e;
+    border-style: solid none;
+    border-radius: 4px;
+    background-color: #3b4252;
+    margin-bottom: 2rem;
+
+}
+
+.projects__card {
+    display: flex;
+    color: #4c566a;
+    text-decoration: none;
+
+    margin: 10px;
+    height: 95%;
+    width: 300px;
+    min-width: 300px;
+    border-radius: 4px;
+    transition: 0.3s ease-in;
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.projects__card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 4px;
+
+    filter: blur(1px);
+
+}
+
+.project__text {
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 4px;
+    text-align: center;
+    z-index: 1;
+}
+
+.project__text h1 {
+    margin-bottom: 10px;
+    color: #eceff4;
+    text-shadow: 2px 2px #3b4252;
+    font-size: 2rem;
+    text-align: center;
+    word-break: keep-all;
+    white-space: normal;
+}
+
+.project__text h2 {
+    margin-bottom: 50px;
+    color: #eceff4;
+    text-shadow: 2px 2px #3b4252;
+    font-size: 1.5rem;
+}
+
+.project__text p {
+    color: #eceff4;
+    text-shadow: 2px 2px #3b4252;
+    padding: 10px;
+    font-size: 15px;
+    word-break: keep-all;
+    white-space: normal;
+
+}
+
+.projects__card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in;
+}
+
+.project__button button {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    background-color: #434c5e;
+    color: #eceff4;
+    transition: 0.5s ease;
+    border-style: none;
+}
+
+.project__button button:hover {
+    transform: scale(1.05);
+    background-color: #d8dee9;
+    color: #3b4252;
+    transition: 0.5s ease;
+}
+
+.proj-box{
+  margin: auto;
+}
+
+.proj-box h1{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#projects{
+  margin: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 95%;
+  border-radius: 8px;
+  background-color: var(--nord4);
+}
+
