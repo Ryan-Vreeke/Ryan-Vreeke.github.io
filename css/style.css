@@ -167,6 +167,14 @@ p {
   padding-bottom: 2rem;
 }
 
+.media-image{
+  width: 60px;
+}
+
+.media-image:hover{
+  filter: brightness(150%);
+}
+
 .media_links li {
   padding-right: 1rem;
 }
