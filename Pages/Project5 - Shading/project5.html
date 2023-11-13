@@ -443,6 +443,8 @@ window.onload = function() {
 	SetShininess( document.getElementById('shininess-exp') );
 	
 	DrawScene();
+  document.getElementById('obj').onchange()
+  document.getElementById('swap-yz').onchange()
 };
 function WindowResize()
 {
@@ -650,13 +652,13 @@ input[type=range] {
 <div class="control-group">
 <div class="control"><input id="show-box" name="show-box" type="checkbox" onchange="DrawScene()" checked /><label for="show-box"> Show Box</label></div>
 <div class="control"><input id="show-texture" name="show-texture" type="checkbox" onchange="ShowTexture(this)" checked /><label for="show-texture"> Show Texture</label></div>
-<div class="control"><input id="swap-yz" name="swap-yz" type="checkbox" onchange="SwapYZ(this)" /><label for="swap-yz"> Swap Y-Z Axes</label></div>
+<div class="control"><input id="swap-yz" name="swap-yz" type="checkbox" onchange="SwapYZ(this)" checked /><label for="swap-yz"> Swap Y-Z Axes</label></div>
 <div class="control"><input id="auto-rotate" name="auto-rotate" type="checkbox" onchange="AutoRotate(this)"/><label for="auto-rotate"> Auto Rotation</label></div>
 <div class="control"><input id="rotation-speed" type="range" min="1" max="100" value="50" disabled/></div>
 <div class="control"><span id="shininess-label">Shininess:</span><span id="shininess-value">1</span><input id="shininess-exp" type="range" min="0" max="100" value="50" oninput="SetShininess(this)"/></div>
 </div>
 <div class="control-group">
-<div class="control">OBJ model:<br/><input id="obj" type="file" onchange="LoadObj(this)" accept=".obj"/></div>
+<div class="control">Load OBJ model<br/><input id="obj" type="file" onchange="LoadObj(this)" accept=".obj" value="./nyra.obj"/></div>
 <div class="control">Texture image:<br/><input id="texture" type="file" onchange="LoadTexture(this)" accept="image/*"/></div>
 </div>
 <div class="control-group">
