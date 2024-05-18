@@ -493,9 +493,13 @@ p {
 .job-card h3 {
   color: var(--nord5);
 }
-
-.job-card p {
+.job-list{
+  padding-left: 20px;
+}
+.job-list li{
+  list-style-type: disc;
   padding-top: 8px;
-  font-size: 20px;
+  padding-left: 20px;
+  font-size: 18px;
   color: var(--nord4);
 }
